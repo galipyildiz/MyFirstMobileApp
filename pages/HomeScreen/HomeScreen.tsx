@@ -17,6 +17,7 @@ function HomeScreen({navigation}: any): React.JSX.Element {
         title="CustomComponent"
         onPress={() => navigation.navigate('CustomComponentPage')}
       />
+      <Button title="News" onPress={() => navigation.navigate('News')} />
     </View>
   );
 }
