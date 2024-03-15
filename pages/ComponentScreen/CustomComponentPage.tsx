@@ -1,6 +1,6 @@
 import React from 'react';
 import {Alert, StyleSheet, View} from 'react-native';
-import Card from '../components/Card';
+import Card from '../../components/Card';
 
 const CustomComponentPage = () => {
   const styles = StyleSheet.create({

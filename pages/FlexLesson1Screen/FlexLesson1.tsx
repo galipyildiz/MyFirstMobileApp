@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import RedBox from '../components/RedBox';
+import RedBox from '../../components/RedBox';
 
 const FlexLesson1 = () => {
   const styles = StyleSheet.create({
