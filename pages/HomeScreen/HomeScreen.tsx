@@ -18,6 +18,14 @@ function HomeScreen({navigation}: any): React.JSX.Element {
         onPress={() => navigation.navigate('CustomComponentPage')}
       />
       <Button title="News" onPress={() => navigation.navigate('News')} />
+      <Button
+        title="State And Lifecycles"
+        onPress={() => navigation.navigate('State&Lifecycle')}
+      />
+      <Button
+        title="State And Lifecycles2"
+        onPress={() => navigation.navigate('State&Lifecycle2')}
+      />
     </View>
   );
 }

@@ -6,6 +6,8 @@ import FlexLesson2 from './pages/FlexLesson2Screen';
 import CustomComponentPage from './pages/ComponentScreen';
 import HomeScreen from './pages/HomeScreen';
 import News from './pages/NewsScreen';
+import StateAndLifecycle from './pages/StateAndLifecycle';
+import StateAndLifecycle2 from './pages/StateAndLifecycle2';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +25,8 @@ const App = () => {
           component={CustomComponentPage}
         />
         <Stack.Screen name="News" component={News} />
+        <Stack.Screen name="State&Lifecycle" component={StateAndLifecycle} />
+        <Stack.Screen name="State&Lifecycle2" component={StateAndLifecycle2} />
       </Stack.Navigator>
     </NavigationContainer>
   );
