@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './StateAndLifecycle2.style';
-import {FlatList, Switch, Text, View} from 'react-native';
+import {Alert, FlatList, Switch, Text, View} from 'react-native';
 
 const data = [
   {
@@ -58,6 +58,18 @@ const data = [
 const StateAndLifecycle2 = () => {
   const [cafeList, setCafeList] = useState(data);
   const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
+
+  useEffect(() => {
+    Alert.alert('render');
+  }, [cafeList]);
+
+  useEffect(() => {
+    Alert.alert('mount');
+    return () => {
+      Alert.alert('unmount');
+      //example usage:event listener cleanup area for performance
+    };
+  }, []);
 
   const renderItem = (renderData: any): React.JSX.Element => {
     return <Text style={styles.text}>{renderData.item.name}</Text>;
