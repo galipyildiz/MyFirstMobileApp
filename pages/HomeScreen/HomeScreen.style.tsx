@@ -3,10 +3,13 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   buttonContainer: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'space-evenly',
   },
   buttonMargin: {
     marginBottom: 10,
+  },
+  image: {
+    flex: 1,
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
   },
 });
